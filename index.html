@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Louie Torreña — Full Stack Web Developer</title>
+<meta name="description" content="Louie Torreña — Full Stack Web Developer & ITSM Analyst. Laravel, React, Vue.js, Node.js, ServiceNow.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="grid-canvas"></canvas>
+
+<div class="scanline"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-brand">LT<span class="dot">_</span></a>
+    <nav class="nav-links">
+      <a href="#about"><span class="idx">01</span>about</a>
+      <a href="#experience"><span class="idx">02</span>experience</a>
+      <a href="#skills"><span class="idx">03</span>skills</a>
+      <a href="#projects"><span class="idx">04</span>projects</a>
+      <a href="#education"><span class="idx">05</span>education</a>
+      <a href="#contact"><span class="idx">06</span>contact</a>
+    </nav>
+    <a href="Louie_Torrena_Resume.pdf" download class="btn btn-ghost nav-cta">↓ resume</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="hero" class="hero">
+  <div class="hero-inner">
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+        <span class="terminal-title">session — ~/louie-torrena</span>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+        <p><span class="prompt">guest@portfolio</span><span class="colon">:~$</span> <span id="typed"></span><span class="cursor">▌</span></p>
+      </div>
+    </div>
+
+    <h1 class="hero-name">LOUIE <span>TORREÑA</span></h1>
+    <p class="hero-role">Full&nbsp;Stack&nbsp;Web&nbsp;Developer <span class="sep">/</span> ITSM&nbsp;&amp;&nbsp;ServiceNow&nbsp;Analyst</p>
+
+    <div class="hero-tags">
+      <span>PHP</span><span>Laravel</span><span>React</span><span>Vue.js</span><span>Node.js</span><span>ServiceNow</span>
+    </div>
+
+    <div class="hero-actions">
+      <a href="Louie_Torrena_Resume.pdf" download class="btn btn-primary">Download Résumé ↓</a>
+      <a href="#projects" class="btn btn-outline">View Projects</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-plus">+</span><span class="stat-label">years experience</span></div>
+      <div class="stat"><span class="stat-num" data-count="10">0</span><span class="stat-plus">+</span><span class="stat-label">technologies</span></div>
+      <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-plus"></span><span class="stat-label">companies served</span></div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down">▾</a>
+</section>
+
+<main>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <p class="eyebrow">// 01 — about</p>
+  <h2 class="section-title">System Overview</h2>
+
+  <div class="panel about-panel">
+    <div class="panel-head">
+      <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+      <span class="terminal-title">cat about.md</span>
+    </div>
+    <div class="panel-body">
+      <p>
+        Results-driven full stack web developer with 3+ years of experience designing, developing,
+        and maintaining responsive web applications. Skilled across PHP, Laravel, JavaScript, React,
+        Vue.js, Node.js, HTML5, CSS3, MySQL, MS&nbsp;SQL, CouchDB, REST&nbsp;APIs, Git, and ServiceNow.
+      </p>
+      <p>
+        Proven track record delivering scalable business applications, optimizing performance,
+        troubleshooting production issues, and collaborating with cross-functional teams inside
+        Agile workflows — from customer-facing UI down to ITSM operations on the enterprise side.
+      </p>
+    </div>
+  </div>
+
+  <div class="quick-info">
+    <div class="qi-item"><span class="qi-label">LOCATION</span><span class="qi-value">Naic, Cavite, Philippines</span></div>
+    <div class="qi-item"><span class="qi-label">EMAIL</span><span class="qi-value"><a href="mailto:torrenalouie@gmail.com">torrenalouie@gmail.com</a></span></div>
+    <div class="qi-item"><span class="qi-label">PHONE</span><span class="qi-value">+63&nbsp;993&nbsp;267&nbsp;6814</span></div>
+    <div class="qi-item"><span class="qi-label">LINKEDIN</span><span class="qi-value"><a href="https://www.linkedin.com/in/louie-torrena" target="_blank" rel="noopener">/in/louie-torrena</a></span></div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="section">
+  <p class="eyebrow">// 02 — experience</p>
+  <h2 class="section-title">Deployment Log</h2>
+
+  <div class="timeline">
+
+    <div class="tl-entry">
+      <div class="tl-marker"></div>
+      <div class="tl-content">
+        <span class="tl-date">OCT 2025 — APR 2026</span>
+        <h3>Senior Analyst — ServiceNow</h3>
+        <span class="tl-org">Accenture</span>
+        <ul>
+          <li>Configured and supported Incident, Problem, Change, Request, and CMDB modules to improve IT service delivery.</li>
+          <li>Resolved production issues through root-cause analysis and cross-functional collaboration.</li>
+          <li>Maintained data accuracy and process compliance while supporting enterprise ITSM operations.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tl-entry">
+      <div class="tl-marker"></div>
+      <div class="tl-content">
+        <span class="tl-date">JAN 2022 — AUG 2025</span>
+        <h3>Web Developer</h3>
+        <span class="tl-org">HRD Singapore Ltd</span>
+        <ul>
+          <li>Developed and maintained full-stack web applications using PHP, Laravel, JavaScript, HTML5, CSS3, and MySQL.</li>
+          <li>Designed responsive user interfaces that improved usability across desktop and mobile devices.</li>
+          <li>Integrated backend databases and REST APIs to support business-critical workflows.</li>
+          <li>Optimized SQL queries and resolved software defects, improving application stability and performance.</li>
+          <li>Collaborated with stakeholders to gather requirements and deliver new features on schedule.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tl-entry">
+      <div class="tl-marker"></div>
+      <div class="tl-content">
+        <span class="tl-date">JAN 2021 — JAN 2022</span>
+        <h3>Branch Manager</h3>
+        <span class="tl-org">RD Pawnshop</span>
+        <ul>
+          <li>Managed daily branch operations, customer relationships, and loan processing.</li>
+          <li>Led staff while ensuring operational compliance and accurate financial records.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section">
+  <p class="eyebrow">// 03 — skills</p>
+  <h2 class="section-title">Loaded Modules</h2>
+
+  <div class="skills-grid">
+    <div class="skill-group">
+      <h3>Frontend</h3>
+      <div class="tag-row">
+        <span>JavaScript</span><span>React</span><span>Vue.js</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>Responsive Design</span><span>AJAX</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h3>Backend</h3>
+      <div class="tag-row">
+        <span>PHP</span><span>Laravel</span><span>Node.js</span><span>REST APIs</span><span>MVC</span><span>JSON</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h3>Data &amp; Tools</h3>
+      <div class="tag-row">
+        <span>MySQL</span><span>MS SQL</span><span>CouchDB</span><span>Git</span><span>GitHub</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h3>ITSM / ServiceNow</h3>
+      <div class="tag-row">
+        <span>ServiceNow</span><span>Incident Management</span><span>Problem Management</span><span>Change Management</span><span>CMDB</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section">
+  <p class="eyebrow">// 04 — projects</p>
+  <h2 class="section-title">Deployed Builds</h2>
+  <p class="section-note">Swap these placeholder modules for your own repos — see the README for exact edit points.</p>
+
+  <div class="projects-grid">
+
+    <article class="project-card">
+      <div class="project-head">
+        <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+        <span class="project-status">v1.0 · live</span>
+      </div>
+      <h3>Project Name One</h3>
+      <p>One or two sentences on the problem this solved and your role — e.g. a Laravel + Vue admin
+        dashboard for managing enterprise workflows, built end-to-end from schema to UI.</p>
+      <div class="tag-row small">
+        <span>Laravel</span><span>Vue.js</span><span>MySQL</span>
+      </div>
+      <div class="project-links">
+        <a href="#" target="_blank" rel="noopener">Live demo →</a>
+        <a href="#" target="_blank" rel="noopener">Source →</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-head">
+        <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+        <span class="project-status">v1.0 · live</span>
+      </div>
+      <h3>Project Name Two</h3>
+      <p>Describe the stack and outcome — e.g. a React + Node.js REST API service that reduced
+        response times and integrated with a third-party payment provider.</p>
+      <div class="tag-row small">
+        <span>React</span><span>Node.js</span><span>REST API</span>
+      </div>
+      <div class="project-links">
+        <a href="#" target="_blank" rel="noopener">Live demo →</a>
+        <a href="#" target="_blank" rel="noopener">Source →</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-head">
+        <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+        <span class="project-status">in progress</span>
+      </div>
+      <h3>Project Name Three</h3>
+      <p>A short line on what makes this one interesting — a technical challenge you solved,
+        or a metric you improved (load time, uptime, user count).</p>
+      <div class="tag-row small">
+        <span>PHP</span><span>CouchDB</span><span>ServiceNow API</span>
+      </div>
+      <div class="project-links">
+        <a href="#" target="_blank" rel="noopener">Live demo →</a>
+        <a href="#" target="_blank" rel="noopener">Source →</a>
+      </div>
+    </article>
+
+    <article class="project-card project-card--add">
+      <div class="add-icon">+</div>
+      <p>Add another module</p>
+      <span class="add-hint">Copy a &lt;article class="project-card"&gt; block in index.html</span>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="section">
+  <p class="eyebrow">// 05 — education</p>
+  <h2 class="section-title">Training Log</h2>
+
+  <div class="edu-grid">
+    <div class="edu-card">
+      <span class="edu-date">APRIL 2020</span>
+      <h3>BS in Information Technology</h3>
+      <span class="edu-org">Cavite State University — Trece Martires City Campus</span>
+    </div>
+    <div class="edu-card">
+      <span class="edu-date">2020</span>
+      <h3>Mobile Application Development</h3>
+      <span class="edu-org">Android Studio &amp; Firebase</span>
+    </div>
+    <div class="edu-card">
+      <span class="edu-date">2019</span>
+      <h3>Creative Lab — Canva</h3>
+      <span class="edu-org">Design, Illustration &amp; Motion</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section contact-section">
+  <p class="eyebrow">// 06 — contact</p>
+  <h2 class="section-title">Open a Channel</h2>
+
+  <div class="panel contact-panel">
+    <div class="panel-head">
+      <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+      <span class="terminal-title">./connect.sh</span>
+    </div>
+    <div class="panel-body contact-body">
+      <p>Open to full-stack, front-end, or ITSM-adjacent roles. The fastest way to reach me:</p>
+      <div class="contact-links">
+        <a href="mailto:torrenalouie@gmail.com" class="btn btn-primary">Email me</a>
+        <a href="https://www.linkedin.com/in/louie-torrena" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+        <a href="Louie_Torrena_Resume.pdf" download class="btn btn-ghost">Download résumé ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>Built by Louie Torreña · <span id="year"></span> · deployed via GitHub Pages</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
