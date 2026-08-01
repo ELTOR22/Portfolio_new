@@ -4,6 +4,39 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // ============================================================
+// Mobile nav toggle
+// ============================================================
+const navToggle = document.getElementById('nav-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+function closeMobileMenu() {
+  mobileMenu.classList.remove('open');
+  navToggle.setAttribute('aria-expanded', 'false');
+  navToggle.setAttribute('aria-label', 'Open menu');
+}
+
+function openMobileMenu() {
+  mobileMenu.classList.add('open');
+  navToggle.setAttribute('aria-expanded', 'true');
+  navToggle.setAttribute('aria-label', 'Close menu');
+}
+
+if (navToggle && mobileMenu) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.contains('open');
+    isOpen ? closeMobileMenu() : openMobileMenu();
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 780) closeMobileMenu();
+  });
+}
+
+// ============================================================
 // Terminal typing effect
 // ============================================================
 const typedEl = document.getElementById('typed');
